@@ -1,0 +1,131 @@
+
+GIT
+
+Installation :- https://git-scm.com/
+
+
+Basic Git configuration
+git config --global user.name "Your Name"
+git config --global user.email "someone@nowhere.com
+git config --list
+git config user.name
+git config user.email
+git config --global core.editor "notepad.exe"   // atom --wait
+git config --global color.ui truegi
+
+Git help
+git help
+
+Initialize a repository
+git init
+ls -la
+
+Your first commit
+git status
+git add <filename>
+git add .
+git commit -m "Initial commit"
+
+View the commit log
+git log
+git log -n 5
+git log --oneline
+git log --since=2021-01-01
+git log --until=2021-01-01
+git log --author="Part of the Name"
+git log --grep="Init"
+
+View changes with diff
+git diff
+git diff --color-words
+
+View only staged changes
+git diff --cached
+
+Delete files
+git rm <filename>
+
+Rename files
+git mv <filename> <renamefilename>
+
+Move files
+git mv <filename> <path[where to move file]>
+
+Stage and commit shortcut
+git commit -am "Message"
+
+View a commit
+git show <hexacodeid>
+
+Compare commits
+git diff hexacode1..hexacode2
+
+Multiline commit messages
+git commit -a
+
+Undo working directory changes
+git restore <filename>
+git restore --staged <filename>
+
+Unstage files
+git reset HEAD <filename>
+git reset <hexacode>
+git reset --hard <hexacode>
+
+Amend commits
+git commit --amend -m "Message"
+
+Revert a commit
+git revert <hexacode>
+
+Remove untracked files
+git clean -dn
+git clean -f
+
+Track empty directories
+touch folder/.gitkeep
+
+Rebase
+git rebase -i HEAD~3
+git rebase -i --root
+
+Branches
+git branch
+
+Copying a branch
+git checkout -b <branch>
+git checkout <branch>
+
+Merging
+git merge <branch>
+
+Deleting a branch
+git branch -d <branchname>
+
+Stashing code
+git stash
+git stash list
+git stash apply
+git stash pop
+
+
+GitHub
+
+Remotes
+git remote add origin URL
+
+Git Push
+git push REMOTE BRANCH
+git push -u origin main
+git push --all
+
+git clone
+
+git fetch
+
+git pull
+
+
+
+
+
