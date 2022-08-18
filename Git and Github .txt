@@ -1,7 +1,5 @@
-//
-GIT
 
-//
+GIT
 
 Installation :- https://git-scm.com/
 
