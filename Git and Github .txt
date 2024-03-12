@@ -126,4 +126,8 @@ git pull
 
 For Removing the VS code GitHub Credential => Go to the Credential Manager
 
-
+SSH Key Generation:
+ssh-keygen -o -t rsa -C "YOUR EMAIL OF GITLAB"
+Default option with give yes
+cat ~/.ssh/id_rsa.pub
+copy and paste into gitlab
